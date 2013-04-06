@@ -1,0 +1,123 @@
+.socwigbtn {
+    background-color: #ddd;
+    overflow: visible;
+}
+
+.socwig-round .socwigbtn {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.socwig-round .socwigbtn.wiggling {
+}
+
+.socwig-32 .socwigbtn {
+	background-image:url(img/social-sprite-32.png);
+	background-repeat: no-repeat;
+	display:inline-block;
+	width:32px;
+	height:32px;
+	margin:2px;
+	text-indent:-9999px;
+}
+
+	.socwig-32.socwig-rounded .socwigbtn {
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	
+.socwig-64 .socwigbtn {
+	background-image:url(img/social-sprite-64.png);
+	background-repeat: no-repeat;
+	display:inline-block;
+	width:64px;
+	height:64px;
+	margin:5px;
+	text-indent:-9999px;
+}
+
+	.socwig-64.socwig-rounded .socwigbtn {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+	
+.socwig-twitter {background-color:#39A9E0;}
+.socwig-facebook {background-color:#3B5998;}
+.socwig-googleplus {background-color:#D14836;}
+.socwig-pinterest {background-color:#CB2027;}
+.socwig-email {background-color:#888;}
+.socwig-linkedin {background-color:#007FB1;}
+.socwig-rss {background-color:#FF8300;}
+.socwig-youtube {background-color:#CD332D;}
+.socwig-wordpress {background-color:#21759B;}
+.socwig-github {background-color:#4183C4;}
+.socwig-instagram {background-color:#3F729B;}
+.socwig-aboutme {background-color:#00405D;}
+.socwig-dribbble {background-color:#EA4C89;}
+.socwig-flickr {background-color:#0063DB;}
+.socwig-forrst {background-color:#5B9A68;}
+.socwig-reddit {background-color:#FF4500;}
+.socwig-vimeo {background-color:#44BBFF;}
+.socwig-stumbleupon {background-color:#EB4924;}
+.socwig-tumblr {background-color:#2C4762;}
+.socwig-digg {background-color:#14589E;}
+.socwig-delicious {background-color:#3274d1;}
+.socwig-deviantart {background-color:#4b5d50;}
+.socwig-android {background-color:#a4c639;}
+.socwig-apple {background-color:#B9BFC1;}
+.socwig-skype {background-color:#00aff0;}
+
+.socwig-32 .socwig-twitter { background-position:0 0; }
+.socwig-32 .socwig-facebook { background-position:0 -32px; }
+.socwig-32 .socwig-pinterest { background-position:0 -64px; }
+.socwig-32 .socwig-googleplus { background-position:0 -96px; }
+.socwig-32 .socwig-email { background-position:0 -128px; }
+.socwig-32 .socwig-linkedin { background-position:0 -160px; }
+.socwig-32 .socwig-rss { background-position:0 -192px; }
+.socwig-32 .socwig-youtube { background-position:0 -224px; }
+.socwig-32 .socwig-wordpress{ background-position:0 -256px; }
+.socwig-32 .socwig-github { background-position:0 -288px; }
+.socwig-32 .socwig-instagram	{ background-position:0 -320px; }
+.socwig-32 .socwig-aboutme	{ background-position:0 -352px; }
+.socwig-32 .socwig-dribbble	{ background-position:0 -384px; }
+.socwig-32 .socwig-flickr	{ background-position:0 -416px; }
+.socwig-32 .socwig-forrst	{ background-position:0 -448px; }
+.socwig-32 .socwig-reddit	{ background-position:0 -480px; }
+.socwig-32 .socwig-vimeo	{ background-position:0 -512px; }
+.socwig-32 .socwig-stumbleupon	{ background-position:0 -544px; }
+.socwig-32 .socwig-tumblr	{ background-position:0 -576px; }
+.socwig-32 .socwig-digg	{ background-position:0 -608px; }
+.socwig-32 .socwig-delicious { background-position:0 -640px; }
+.socwig-32 .socwig-deviantart { background-position:0 -672px; }
+.socwig-32 .socwig-android { background-position:0 -704px; }
+.socwig-32 .socwig-apple { background-position:0 -736px; }
+.socwig-32 .socwig-skype { background-position:0 -768px; }
+
+.socwig-64 .socwig-twitter { background-position:0 0; }
+.socwig-64 .socwig-facebook { background-position:0 -64px; }
+.socwig-64 .socwig-pinterest { background-position:0 -128px; }
+.socwig-64 .socwig-googleplus { background-position:0 -192px; }
+.socwig-64 .socwig-email { background-position:0 -256px; }
+.socwig-64 .socwig-linkedin { background-position:0 -320px; }
+.socwig-64 .socwig-rss { background-position:0 -384px; }
+.socwig-64 .socwig-youtube { background-position:0 -448px; }
+.socwig-64 .socwig-wordpress{ background-position:0 -512px; }
+.socwig-64 .socwig-github { background-position:0 -576px; }
+.socwig-64 .socwig-instagram	{ background-position:0 -640px; }
+.socwig-64 .socwig-aboutme	{ background-position:0 -704px; }
+.socwig-64 .socwig-dribbble	{ background-position:0 -768px; }
+.socwig-64 .socwig-flickr	{ background-position:0 -832px; }
+.socwig-64 .socwig-forrst	{ background-position:0 -896px; }
+.socwig-64 .socwig-reddit	{ background-position:0 -960px; }
+.socwig-64 .socwig-vimeo	{ background-position:0 -1024px; }
+.socwig-64 .socwig-stumbleupon	{ background-position:0 -1088px; }
+.socwig-64 .socwig-tumblr	{ background-position:0 -1152px; }
+.socwig-64 .socwig-digg	{ background-position:0 -1216px; }
+.socwig-64 .socwig-delicious { background-position:0 -1280px; }
+.socwig-64 .socwig-deviantart { background-position:0 -1344px; }
+.socwig-64 .socwig-android { background-position:0 -1408px; }
+.socwig-64 .socwig-apple { background-position:0 -1472px; }
+.socwig-64 .socwig-skype { background-position:0 -1536px; }
