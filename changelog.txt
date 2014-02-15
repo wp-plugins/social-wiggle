@@ -1,0 +1,8 @@
+Social Wiggle Changelog
+================
+
+> Last updated 05 Mar 2013
+
+2013.03.05 - version 0.1
+------------------------
+ * Initial release
