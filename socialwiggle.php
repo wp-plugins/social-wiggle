@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Social Wiggle
+Plugin Name: SocialWiggle
 Plugin URI: http://fooplugins.com/plugins/socialwiggle-lite/
 Description: Social Tiles With A Difference!
-Version: 0.8
+Version: 0.8.1
 Author: Brad Vincent
 Author URI: http://fooplugins.com/
 License: GPL2
@@ -27,9 +27,9 @@ if (!class_exists('socialwiggle')) {
 
 		function init() {
 			$this->plugin_slug = 'socialwiggle';
-			$this->plugin_title = 'Social Wiggle';
-			$this->plugin_version = '0.8';
-			
+			$this->plugin_title = 'SocialWiggle';
+			$this->plugin_version = '0.8.1';
+
 			//call base init
 			parent::init();
 
@@ -46,7 +46,7 @@ if (!class_exists('socialwiggle')) {
 
             new socwig_admin_settings(true);
 		}
-		
+
 		/**
 		* Loads the plugin text domain for translation
 		*/
@@ -55,17 +55,17 @@ if (!class_exists('socialwiggle')) {
 			load_textdomain( $this->plugin_slug, WP_LANG_DIR.'/'.$this->plugin_slug.'/'.$this->plugin_slug.'-'.$locale.'.mo' );
 			load_plugin_textdomain( $this->plugin_slug, FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		} // end load_text_domain
-    
+
 		function admin_settings_summary() {
-			$html = __('For more info about Social Wiggle, please visit the <a href="%s" target="_blank">Social Wiggle homepage</a>.', 'socialwiggle');
+			$html = __('For more info about SocialWiggle, please visit the <a href="%s" target="_blank">SocialWiggle homepage</a>.', 'socialwiggle');
 			return sprintf($html, self::HOMEPAGE_URL);
 		}
-    
+
 		function admin_settings_title() {
 			$title = __('%s Settings (v%s)', 'socialwiggle');
 			return sprintf($title, $this->plugin_title, $this->plugin_version);
 		}
-    
+
 		function admin_plugin_row_meta($links) {
 			$links[] = sprintf('<a target="_blank" href="%s"><b>%s</b></a>', self::PRO_URL, __('Upgrade to the PRO version now!', 'socialwiggle'));
 			return $links;
@@ -85,7 +85,7 @@ if (!class_exists('socialwiggle')) {
 				$this->render_networks_table();
 			}
 		}
-		
+
 		function render_networks_table() {
 			require_once "includes/networks_table.php";
 			socwig_render_networks_table($this->get_option('networks'));
@@ -103,7 +103,7 @@ if (!class_exists('socialwiggle')) {
 			$demo_wiggle = $this->get_option('demo_wiggle');
 			socwig_render_demo($demo_style, $demo_wiggle);
 		}
-    
+
 		function frontend_init() {
 			add_action('wp_print_styles', array(&$this, 'inline_dynamic_css') );
 		}
@@ -136,7 +136,7 @@ if (!class_exists('socialwiggle')) {
 
 			//enqueue socialwiggle script
 			$this->register_and_enqueue_js(
-				$file = self::JS, 
+				$file = self::JS,
 				$d = $this->get_js_depends(),
 				$v = false,
 				$f = $infooter);

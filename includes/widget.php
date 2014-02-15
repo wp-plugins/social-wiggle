@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Social Wiggle - Widget Class
+ * SocialWiggle - Widget Class
  *
  * @author 	Brad Vincent
  * @package 	social-wiggle/includes
@@ -11,6 +11,7 @@
 class SocWig_Widget extends WP_Widget {
 
     const POWERED_BY_URL = 'http://fooplugins.com/plugins/socialwiggle-lite/';
+	const PRO_URL = 'http://fooplugins.com/plugins/socialwiggle-pro/';
 
 	/**
 	 * Register widget with WordPress.
@@ -18,8 +19,8 @@ class SocWig_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'socwig_widget', // Base ID
-			'Social Wiggle', // Name
-			array( 'description' => __( 'Add Social Wiggle icons to a widget area', 'socialwiggle' ), )
+			'SocialWiggle', // Name
+			array( 'description' => __( 'Add SocialWiggle icons to a widget area', 'socialwiggle' ), )
 		);
 	}
 
@@ -38,15 +39,15 @@ class SocWig_Widget extends WP_Widget {
 		echo $before_widget;
 		if ( ! empty( $title ) )
 			echo $before_title . $title . $after_title;
-		
+
 		$generator = new socwig_button_generator();
-		
+
 		$generator->render($instance['size'], $instance['style'], $instance['wiggle']);
 
-        $powered_by = '<div class="social-wiggle-powered">' . __('Powered by', 'socialwiggle') . ' <a target="_blank" title="' . __('Social Wiggle Free WordPress Plugin', 'socialwiggle') . '" href="' . self::POWERED_BY_URL . '">Social Wiggle</a></div>';
+        $powered_by = '<div class="social-wiggle-powered">' . __('Powered by', 'socialwiggle') . ' <a target="_blank" title="' . __('SocialWiggle Free WordPress Plugin', 'socialwiggle') . '" href="' . self::POWERED_BY_URL . '">SocialWiggle</a></div>';
 
         echo $powered_by;
-		
+
 		echo $after_widget;
 	}
 
@@ -84,18 +85,26 @@ class SocWig_Widget extends WP_Widget {
 		$wiggle = isset( $instance[ 'wiggle' ] ) ? $instance[ 'wiggle' ] : 'random';
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'socialwiggle' ); ?></label> 
+			<?php
+			$url = admin_url('options-general.php?page=socialwiggle');
+			$link = sprintf('<a href="%s" target="_blank">%s</a>', $url, __('SocialWiggle settings page', 'socialwiggle'));
+			$html = sprintf( __('To setup your social network buttons, visit the %s.', 'socialwiggle'), $link );
+			echo $html;
+			?>
+		</p>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'socialwiggle' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'size' ); ?>"><?php _e( 'Size:', 'socialwiggle' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'size' ); ?>"><?php _e( 'Size:', 'socialwiggle' ); ?></label>
 			<select class="widefat" id="<?php echo $this->get_field_id( 'size' ); ?>" name="<?php echo $this->get_field_name( 'size' ); ?>">
 				<option <?php echo ($size == '64') ? 'selected="selected"' : ''; ?> value="64">64 x 64</option>
 				<option <?php echo ($size == '32') ? 'selected="selected"' : ''; ?> value="32">32 x 32</option>
 			</select>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php _e( 'Style:', 'socialwiggle' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'style' ); ?>"><?php _e( 'Style:', 'socialwiggle' ); ?></label>
 			<select class="widefat" id="<?php echo $this->get_field_id( 'style' ); ?>" name="<?php echo $this->get_field_name( 'style' ); ?>">
 				<option <?php echo ($style == 'square') ? 'selected="selected"' : ''; ?> value="square">Square</option>
 				<option <?php echo ($style == 'rounded') ? 'selected="selected"' : ''; ?> value="rounded">Rounded</option>
@@ -103,7 +112,7 @@ class SocWig_Widget extends WP_Widget {
 			</select>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'wiggle' ); ?>"><?php _e( 'Wiggle:', 'socialwiggle' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'wiggle' ); ?>"><?php _e( 'Wiggle:', 'socialwiggle' ); ?></label>
 			<select class="widefat" id="<?php echo $this->get_field_id( 'wiggle' ); ?>" name="<?php echo $this->get_field_name( 'wiggle' ); ?>">
 				<option <?php echo ($wiggle == 'random') ? 'selected="selected"' : ''; ?> value="random">Random</option>
 				<option <?php echo ($wiggle == 'hover') ? 'selected="selected"' : ''; ?> value="hover">On Hover</option>
@@ -112,14 +121,10 @@ class SocWig_Widget extends WP_Widget {
 			</select>
 		</p>
 		<p>
-			<?php 
-				$url = admin_url('options-general.php?page=socialwiggle');
-				$link = sprintf('<a href="%s" target="_blank">%s</a>', $url, __('Social Wiggle settings page', 'socialwiggle'));
-				$html = sprintf( __('To setup your social network buttons, visit the %s.', 'socialwiggle'), $link );
-				echo $html;
-			?>
+			<label><?php _e( 'Show SocialWiggle Branding:', 'socialwiggle' ); ?></label>
+			<input type="checkbox" checked="checked" disabled="disabled" /><br /><a target="_blank" href="<?php echo self::PRO_URL; ?>"><?php _e('Purchase the PRO version to remove this.', 'socialwiggle') ?></a>
 		</p>
-		<?php 
+		<?php
 	}
 
 } // class Foo_Widget

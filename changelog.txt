@@ -1,8 +1,14 @@
-Social Wiggle Changelog
-================
+SocialWiggle Changelog
+=======================
 
-> Last updated 05 Mar 2013
+> Last updated 15 Feb 2014
 
-2013.03.05 - version 0.1
+2013.03.05 - version 0.8.1
+------------------------
+* Compatible with WP 3.8.1
+* Fixed spelling mistakes
+* New screenshots
+
+2013.03.05 - version 0.8
 ------------------------
  * Initial release

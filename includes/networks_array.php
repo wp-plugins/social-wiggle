@@ -1,6 +1,6 @@
 <?php
 /**
- * Social Wiggle - networks array
+ * SocialWiggle - networks array
  *
  * @author 	Brad Vincent
  * @package 	social-wiggle/includes

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Social Wiggle - settings
+ * SocialWiggle - settings
  *
  * @author    Brad Vincent
  * @package    social-wiggle/includes
@@ -78,7 +78,7 @@ if (!class_exists('socwig_admin_settings')) {
 <table class="widefat social-wiggle-pro-table">
 <thead>
     <tr>
-        <th></th>
+        <th>Feature</th>
         <th>Lite</th>
         <th><a href="'.$socialwiggle::PRO_URL.'" target="_blank">Pro</a></th>
     </tr>
@@ -96,7 +96,7 @@ if (!class_exists('socwig_admin_settings')) {
     </tr>
     <tr>
         <td><strong>Widget Branding</strong></td>
-        <td>Has a "powered by Social Wiggle" link</td>
+        <td>Has a "powered by SocialWiggle" link</td>
         <td><span>No branding</span> or powered by link!</td>
     </tr>
     <tr>
@@ -121,7 +121,7 @@ if (!class_exists('socwig_admin_settings')) {
 
                 $socialwiggle->admin_settings_add( array(
                 'id'      => 'upgrade_info',
-                'title'   => sprintf ( __( 'Why Upgrade To <a href="%s" target="_blank">Social Wiggle Pro</a>?', 'socialwiggle' ), $socialwiggle::PRO_URL ),
+                'title'   => sprintf ( __( 'Why Upgrade To Pro?', 'socialwiggle' ), $socialwiggle::PRO_URL ),
                 'desc'    => $upgrade_html,
                 'type'    => 'html',
                 'tab'     => 'upgrade'

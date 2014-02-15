@@ -28,6 +28,15 @@
 	border:solid 1px #eee;
 }
 
+.socwig-table tr.disabled td input.socwig-table-check {
+	border-color: #BBB;
+}
+
+.socwig-table tr.disabled td span.socwig-table-title {
+	padding-left:3px;
+	color: #555;
+}
+
 .socwig-table tr.disabled .socwigbtn {
 	background-color:#666;
 }
@@ -63,7 +72,15 @@
     background: url('img/banner.jpg') no-repeat top left;
 }
 
+.social-wiggle-pro-table th {
+	padding-left: 10px;
+}
+
 .social-wiggle-pro-table span {
     font-weight: bold;
     color: #da1d77;
+}
+
+.socwig-table th.column-cb {
+	width:2%;
 }

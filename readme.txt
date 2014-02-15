@@ -1,10 +1,10 @@
-=== Social Wiggle ===
-Contributors: bradvin 
-Donate link: http://themergency.com/donate
+=== SocialWiggle ===
+Contributors: bradvin
+Donate link: http://fooplugins.com
 Tags: social networks,social profiles,social,metro
 Requires at least: 3.5
-Tested up to: 3.5.1
-Stable tag: trunk
+Tested up to: 3.8.1
+Stable tag: 0.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Display your social network profiles using catchy looking Metro tiles that wiggl
 
 == Description ==
 
-> Social Wiggle documentation, FAQ and support can be found at [FooPlugins.com](http://fooplugins.com/plugins/socialwiggle-lite/)
+> SocialWiggle documentation, FAQ and support can be found at [FooPlugins.com](http://fooplugins.com/plugins/socialwiggle-lite/)
 
 **features**
 
@@ -23,7 +23,7 @@ Display your social network profiles using catchy looking Metro tiles that wiggl
 *	2 sizes : 64x64 or 32x32
 *   Include it into your page using an easy to use Widget
 
-**Upgrade to [Social Wiggle PRO](http://fooplugins.com/plugins/socialwiggle-pro/) and also get**
+**Upgrade to [SocialWiggle PRO](http://fooplugins.com/plugins/socialwiggle-pro/) and also get**
 
 *   20 social networks
 *   Editor button and shortcode generator
@@ -45,5 +45,10 @@ Display your social network profiles using catchy looking Metro tiles that wiggl
 
 == Changelog ==
 
-= 0.1 =
+= 0.8.1 =
+* Compatible with WP 3.8.1
+* Fixed spelling mistakes
+* New screenshots
+
+= 0.8 =
 * Initial Relase. First version.

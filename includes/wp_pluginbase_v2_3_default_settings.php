@@ -6,7 +6,7 @@ Default options page used by WP_PluginBase
 if (!class_exists('wp_pluginbase_v2_3_default_settings')) {
 
   class wp_pluginbase_v2_3_default_settings {
-    
+
     public static function render($title, $summary, $plugin_name, $tabs) {
       global $wp_version;
 ?>
@@ -17,10 +17,10 @@ if (!class_exists('wp_pluginbase_v2_3_default_settings')) {
 
 	<h2><?php echo $title; ?></h2>
 	<?php echo $summary; ?>
-        <?php 
+        <?php
           //only show the settings messages if less than WP3.5
           if (version_compare($wp_version, '3.5') < 0) {
-            settings_errors(); 
+            settings_errors();
           }
         ?>
 	<form action="options.php" method="post">
@@ -30,7 +30,7 @@ if (!class_exists('wp_pluginbase_v2_3_default_settings')) {
                     //we have tabs - woot!
                 ?>
                 <div style="float:left;height:16px;width:16px;"><!-- spacer for tabs --></div>
-                <h3 class="nav-tab-wrapper">
+                <h2 class="nav-tab-wrapper">
                 <?php
                     //loop thru the tabs to render the actual tabs at the top
                     $first = true;
@@ -40,7 +40,7 @@ if (!class_exists('wp_pluginbase_v2_3_default_settings')) {
                         if ($first) { $first = false; }
                     }
                 ?>
-                </h3>
+                </h2>
                 <?php
                     //now loop thru the tabs to render the content containers
                     $first = true;
@@ -87,5 +87,5 @@ if (!class_exists('wp_pluginbase_v2_3_default_settings')) {
     }
 
   }
-  
+
 }

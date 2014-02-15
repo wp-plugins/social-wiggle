@@ -1,6 +1,6 @@
 <?php
 /**
- * Social Wiggle - button generator
+ * SocialWiggle - button generator
  *
  * @author 	Brad Vincent
  * @package 	social-wiggle/includes
@@ -31,6 +31,7 @@ if (!class_exists('socwig_button_generator')) {
             if ($networks === false) {
                 if ($echo) {
                     echo $no_networks_message;
+					return;
                 } else {
                     return $no_networks_message;
                 }
@@ -63,7 +64,7 @@ if (!class_exists('socwig_button_generator')) {
                 $class[] = 'socwig-wiggle-on-hover';
             }
 
-            $output = '<!-- Powered by Social Wiggle : http://fooplugins.com/products/socialwiggle-pro/ -->
+            $output = '<!-- Powered by SocialWiggle : http://fooplugins.com/products/socialwiggle-pro/ -->
 <div class="socwig-container ' . implode(' ', $class) . '">';
             foreach ($socwig_actual_sortorder as $class) {
                 $network = $available_networks[$class];
