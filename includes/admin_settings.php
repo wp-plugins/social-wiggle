@@ -72,7 +72,7 @@ if (!class_exists('socwig_admin_settings')) {
             $socialwiggle->admin_settings_add_tab('upgrade', __('Pro Version', 'socialwiggle'));
 
             $upgrade_html = '</td></tr><tr valign="top"><td colspan="2">
-<a class="social-wiggle-pro-ad" href="'.$socialwiggle::PRO_URL.'" target="_blank"></a><br />
+<a class="social-wiggle-pro-ad" href="'.socialwiggle::PRO_URL.'" target="_blank"></a><br />
 <h3>Here are a few reasons:</h3>
 <div style="width:50%">
 <table class="widefat social-wiggle-pro-table">
@@ -80,7 +80,7 @@ if (!class_exists('socwig_admin_settings')) {
     <tr>
         <th>Feature</th>
         <th>Lite</th>
-        <th><a href="'.$socialwiggle::PRO_URL.'" target="_blank">Pro</a></th>
+        <th><a href="'.socialwiggle::PRO_URL.'" target="_blank">Pro</a></th>
     </tr>
 </thead>
 <tbody>
@@ -121,7 +121,7 @@ if (!class_exists('socwig_admin_settings')) {
 
                 $socialwiggle->admin_settings_add( array(
                 'id'      => 'upgrade_info',
-                'title'   => sprintf ( __( 'Why Upgrade To Pro?', 'socialwiggle' ), $socialwiggle::PRO_URL ),
+                'title'   => sprintf ( __( 'Why Upgrade To Pro?', 'socialwiggle' ), socialwiggle::PRO_URL ),
                 'desc'    => $upgrade_html,
                 'type'    => 'html',
                 'tab'     => 'upgrade'

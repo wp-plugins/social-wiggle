@@ -4,7 +4,7 @@ Donate link: http://fooplugins.com
 Tags: social networks,social profiles,social,metro
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 0.8.1
+Stable tag: 0.8.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ Display your social network profiles using catchy looking Metro tiles that wiggl
 3. Frontend Widget
 
 == Changelog ==
+
+= 0.8.2 =
+* Fixed const bug in admin_settings.php
 
 = 0.8.1 =
 * Compatible with WP 3.8.1

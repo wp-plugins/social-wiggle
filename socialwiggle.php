@@ -3,7 +3,7 @@
 Plugin Name: SocialWiggle
 Plugin URI: http://fooplugins.com/plugins/socialwiggle-lite/
 Description: Social Tiles With A Difference!
-Version: 0.8.1
+Version: 0.8.2
 Author: Brad Vincent
 Author URI: http://fooplugins.com/
 License: GPL2
@@ -28,7 +28,7 @@ if (!class_exists('socialwiggle')) {
 		function init() {
 			$this->plugin_slug = 'socialwiggle';
 			$this->plugin_title = 'SocialWiggle';
-			$this->plugin_version = '0.8.1';
+			$this->plugin_version = '0.8.2';
 
 			//call base init
 			parent::init();
