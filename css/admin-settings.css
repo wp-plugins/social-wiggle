@@ -1,0 +1,86 @@
+.medium_textarea {
+  width:400px;
+  height:100px;
+}
+
+.socwig-dragme{
+	cursor: move;
+}
+
+.tDnD_whileDrag {
+    background-color: #ddd;
+}
+
+.socwig-table i {
+	vertical-align: middle;
+	margin:0;
+}
+
+.socwig-table td span {
+	vertical-align: middle;
+}
+
+.socwig-table tr.disabled td, .socwig-table tr.disabled td input {
+	color:#ddd;
+}
+
+.socwig-table tr.disabled td input {
+	border:solid 1px #eee;
+}
+
+.socwig-table tr.disabled td input.socwig-table-check {
+	border-color: #BBB;
+}
+
+.socwig-table tr.disabled td span.socwig-table-title {
+	padding-left:3px;
+	color: #555;
+}
+
+.socwig-table tr.disabled .socwigbtn {
+	background-color:#666;
+}
+
+.license-input.loading {
+    background:url('img/settings/spinner.gif') no-repeat right center;
+}
+
+.license-input.valid {
+    background:url('img/settings/valid.png') no-repeat right center;
+    padding-right:3px;
+}
+
+.license-input.invalid {
+    background:url('img/settings/invalid.png') no-repeat right center;
+}
+
+.license-message {
+    display: table-cell;
+    background-color: lightYellow; border: solid 1px #E6DB55; padding:3px 10px;
+}
+
+.license-message p {
+    margin: 0;
+}
+
+.social-wiggle-pro-ad {
+    display: inline-block;
+    width: 590px;
+    height: 75px;
+    vertical-align: text-top;
+    margin: 0 2px;
+    background: url('img/banner.jpg') no-repeat top left;
+}
+
+.social-wiggle-pro-table th {
+	padding-left: 10px;
+}
+
+.social-wiggle-pro-table span {
+    font-weight: bold;
+    color: #da1d77;
+}
+
+.socwig-table th.column-cb {
+	width:2%;
+}
